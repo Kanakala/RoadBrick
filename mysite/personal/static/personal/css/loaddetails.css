@@ -1,0 +1,40 @@
+.logo-width {
+	width:250px;
+}
+
+
+
+
+
+
+
+
+#scrollpynavigation li a:hover,#scrollpynavigation  li a:focus, #scrollpynavigation  li a:active {
+        border-bottom: 2px solid #F11784;
+        text-decoration: none;
+        color:white;
+}
+
+#scrollpynavigation li a {
+	padding-top: 20px;
+}
+
+.paddingtop{
+    padding-top: 15px;
+}
+
+.paddingbottom {
+	padding-bottom: 0px
+}
+
+.notificationstyle {
+	width:35px;
+	 height:35px; 
+	 margin-top: -9px;
+	}
+
+.footerstyle {padding-left: 120px; 
+	padding-top: 0px;
+    align-content: center; 
+    margin-bottom :10px
+}

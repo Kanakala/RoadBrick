@@ -1,0 +1,463 @@
+body
+{ 
+	position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.headerstyle
+{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	text-decoration-style: none; 
+	border-bottom: 3px solid orange; 
+	padding-bottom: 5px;
+}
+.headerstyle  img {
+		width: 40px;
+		height: 40px;
+}
+.headerstyle h1 {
+			display: inline; 
+			font-weight: bold;
+}
+.headerstyle h3 {
+	display: inline; 
+	font-weight: bold;
+	color:orange;
+}
+
+.orangecolor {
+	color: orange;
+}
+.textstyle-none
+{ 
+	text-decoration-style: none;
+}
+
+.borderbetweentwodiv {
+	margin-top: 10px; 
+	border-bottom: 3px solid orange;
+}
+
+.displayandfont h1 h3 {
+	display: inline; 
+	font-weight: bold;
+}
+.displayinline {
+		display: inline; 
+}
+ .borderbottom{
+   border-bottom: 3px solid orange;
+}
+
+.colorgrey {
+	color:grey;
+}
+
+.bgandcolor 
+{
+	background-color: #1a398a;
+	color:white;"
+}
+
+.nomargin {
+	margin: 0px;
+	margin-bottom: 0px;
+}
+
+.nopaddin {
+	padding: 0px;
+}
+
+
+
+.nopaddingtop {
+	padding-top: 0px;
+}
+
+
+
+.nopaddingbottom {
+	padding-bottom: 0px;
+}
+
+
+.align-centre {
+	text-align: center;
+}
+.margin-bottom10 { 
+    margin-bottom: 10px;}
+
+
+#Submitbutton {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+
+.carouselpadding {
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-top: 3px;
+}
+
+
+#Logoimg {
+	margin-top: 5px;
+	padding: 0px;
+}
+
+
+#Logoimg img {
+	width:250px;
+}
+
+#bs-example-navbar-collapse-1 {
+	padding-right: 10px;
+}
+
+#LoginButton {
+	margin-top: 10px;
+	background-color: white;
+}
+
+
+.norightmargin {
+	margin-right: 0px;
+}
+
+
+.carousel .item {
+	height: 373px;
+}
+
+
+#cfebackground {
+background-color: #ebebe0;
+height: 330px;
+}
+
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+#carousel-roadbrick h3 {
+	padding-bottom: 20px;
+}
+.displayandfont h1 h3 {
+	display: inline;
+    font-weight: bold;
+}
+
+.item img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 300px;
+}
+#panelroadbrick {
+	align-content: center; 
+	margin-top: 3px; 
+	height: 325px;
+}
+
+
+#livebidslist {
+	padding-top: 0px;
+	padding-bottom: 0px; 
+	margin-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+
+.formpadding{
+	padding: 10px;
+}
+
+
+.panel-body {
+background-size: 1140;
+}
+
+.panel-default > .panel-heading {
+	background-color: #e6f1ca;
+}
+
+
+.fontsize {
+	font-size: 12px;
+}
+
+
+.fareestimatetoppadding {
+padding-top: 3px;
+}
+
+
+
+
+.fareEstimatepadding {
+	padding-left: 0px;
+}
+
+
+
+
+#livebids {
+	text-align: center;
+	padding-top: 0px;
+}
+
+
+
+#livebids .row {
+    padding-top: 10px;
+    margin-bottom: 9px;
+}
+
+
+#livebids .nopaddingtop {
+	padding-top: 6px;
+}
+
+
+.bottomborder {
+	border-bottom: solid;
+}
+
+
+.discription h4 {
+	color:green;
+}
+
+.discription img {
+	width: 50px;
+	height: 50px;
+}
+
+.margin-top-padding-bottom { 
+	margin-top: 0px;
+	 padding-bottom: 5px;
+	}
+
+
+
+
+
+
+.howdoesitwork p {
+	display: inline;
+}
+
+.howdoesitwork img {width: 80px;
+	height: 30px;
+}
+
+
+
+
+
+
+
+
+.featureImagesize {
+height: 100px; 
+width: 150px;
+}
+
+
+.featureleftimagemargin{
+margin-left: 20px;
+	margin-top: 30px;
+	margin-right: 10px;
+	margin-bottom: 30px;
+}
+
+
+.featuremiddleimageMargin {
+	margin-left: 10px;
+	margin-top: 30px;
+	margin-right: 10px;
+	margin-bottom: 30px;
+}
+
+.featurerightimagemargin{
+margin-left: 10px;
+	margin-top: 30px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+}
+
+
+.navbarbackground{
+	background-color: #1a398a;
+	text-decoration-color: black;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color:green;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-language {
+	margin-top: 15px;
+    margin-left: 10px;
+    width: 97px;
+    height: 27px;
+    background-color: #808080;
+    color:white;
+}
+
+.form-control {
+		border-radius: 0px;
+		border-color: #39e600;
+		height: 25px;
+}
+
+.roadbrickbutton {
+	width: 125px;
+    color: white;
+    background: orange;
+    border-radius: 0px;
+}
+
+#calculatebutton {
+	text-align: center;
+}
+
+.leftmargin {
+	margin-left: 30px;
+}
+
+
+.alignnumbers {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+
+.blackcolor{color:black;
+}
+
+
+
+
+
+
+
+
+#vechileboard .marginbottom {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+
+#selectcity select {
+	color: black; 
+	background-color: white; 
+	width: 110px;
+	 height: 28px;
+}
+
+
+
+.ourteam {
+	padding-bottom: 5px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.orangecolor{
+	color:orange; 
+}
+.paragraphmargin {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.howitworksbutton {
+	width: 125px;
+    color: white;
+    background: #5c00e6;
+    border-radius: 0px;
+}
+
+#howitworksimg {
+	width: 80px;
+	height: 30px;
+}
+
+
+.photographmargin {
+	width: 80px;
+	height: 80px; 
+	margin-left: 50px;
+}
+
+.persondetail p {
+	margin-bottom: 20px;
+	 margin-top: 20px; 
+	 text-align: center;
+
+}
+
+.contact {
+	height: 35px;
+	width: 400px;
+	background-color: #d6d6c2;
+	border-color: #d6d6c2;
+}
+
+#contactmessage {
+	height: 100px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.roadbrick_footer {
+	background-color: #1a398a;
+	color: white;
+}
+
+.roadbrick_footer a {
+	color:white;
+}
+
+.footerlist li {
+	display: inline;
+}
+
+
+.footerlist li:not(:first-child):before {
+	content: '|';
+	padding: 10px;
+}
+
+.copyrightstyle p {padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+.footerstyle{padding-left: 120px; 
+	padding-top: 0px;
+	 align-content: center;
+	  margin-bottom :10px
+	}
+
+.footersocial li {
+	display: inline;
+	padding-right: 10px;
+}
+
+.footersocial li a img {
+	padding-top: 5px;
+	width: 50px;
+	height: 50px;
+}
+
+

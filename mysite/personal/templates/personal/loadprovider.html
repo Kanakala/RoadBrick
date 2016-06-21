@@ -1,0 +1,47 @@
+{%extends "personal/header.html" %}
+{% block content %}
+{% load staticfiles %}
+<div class=" container-fluid row nomargin " style="text-align: center; ">
+	<div class="col-lg-4 col-lg-offset-4" style="margin-top: 20px; margin-bottom: 20px; text-decoration-style: none; border-bottom: 3px solid orange; padding-bottom: 5px;">
+		<h1 style="display: inline; font-weight: bold;"> <img style="width: 40px;height: 40px" src="{%static 'personal/images/loadprovider.png'%}" alt=""> </h1>
+		<h3 style="display: inline; font-weight: bold; color:orange"> &nbsp; Load Provider</h3>
+	</div>
+</div>
+<div class="row container-fluid" style="font-size: 18px">
+	<div class="col-lg-3 col-md-8 col-md-offset-2 col-lg-offset-1" style="color:grey">
+		<div class="row">
+			<h3 style="color:green;"><img style="width: 50px;height: 50px" src="{%static 'personal/images/loadprovider.png'%}" alt=""> &nbsp;Unlimited Trucks</h3>
+		</div>
+		<div class="row">
+			<p class="paragraphmargin">Lots of Truck Provider will  fight for your load</p>
+			<p class="paragraphmargin">You just have to accept the Lowest Bidders among them</p>
+			
+		</div>
+	</div>
+	<div class="col-lg-3 col-md-8 col-md-offset-2  col-lg-offset-1" style="color:grey">
+		<div class="row">
+			<h3 style="color:green;"><img style="width: 50px;height: 50px" src="{%static 'personal/images/Verifiedtruck.png'%}" alt=""> &nbsp;Verified Trucks</h3>
+		</div>
+		<div class="row">
+			<p class="paragraphmargin">Our all customers were verified by our customer relation teams</p>
+			<p class="paragraphmargin">No worry about legitimacy</p>
+		</div>
+	</div>
+	<div class="col-lg-3 col-md-8 col-md-offset-2  col-lg-offset-1" style="color:grey">
+		<div class="row">
+			<h4 style="color:green;"><img style="width: 50px;height: 50px" src="{%static 'personal/images/free.png'%}" alt=""> &nbsp;No Charges</h4>
+		</div>
+		<div class="row">
+			<p class="paragraphmargin"> It's free</p>
+			
+
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-lg-4 col-lg-offset-5">
+		<button style="width: 200px; height: 40px; font-size: 15px;" type="button" id="Truck_Provider" class="btn btn-secondary fontsize align-centre roadbrickbutton">Join Us</button>
+	</div>
+</div>
+{% endblock %}

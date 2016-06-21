@@ -1,0 +1,50 @@
+{%extends "personal/header.html" %}
+{% block content %}
+{% load staticfiles %}
+<div class=" container-fluid row nomargin " style="text-align: center; ">
+	<div class="col-lg-4 col-lg-offset-4" style="margin-top: 20px; margin-bottom: 20px; text-decoration-style: none; border-bottom: 3px solid orange; padding-bottom: 5px;">
+		<h1 style="display: inline; font-weight: bold;"> <img style="width: 40px;height: 40px" src="{%static 'personal/images/truck-icon.png'%}" alt=""> </h1>
+		<h3 style="display: inline; font-weight: bold; color:orange"> &nbsp; Truck Provider</h3>
+	</div>
+</div>
+
+<div class="row container-fluid" style="font-size: 18px">
+	<div class="col-lg-3 col-md-8 col-md-offset-2 col-lg-offset-1" style="color:grey">
+		<div class="row">
+			<h3 style="color:green;"><img style="width: 50px;height: 50px" src="{%static 'personal/images/loadicon.png'%}" alt=""> &nbsp;Unlimited Loads</h3>
+		</div>
+		<div class="row">
+			<p class="paragraphmargin">Access to all loads available all over country on one page</p>
+			
+		</div>
+	</div>
+	<div class="col-lg-3 col-md-8 col-md-offset-2  col-lg-offset-1" style="color:grey">
+		<div class="row">
+			<h3 style="color:green;"><img style="width: 50px;height: 50px" src="{%static 'personal/images/reputation-icon.png'%}" alt=""> &nbsp;Reputation</h3>
+		</div>
+		<div class="row">
+			<p class="paragraphmargin">Your rating will built your reputation in the market.</p>
+			<p class="paragraphmargin">Now every one in the market see your quality of service. </p>
+		</div>
+	</div>
+	<div class="col-lg-3 col-md-8 col-md-offset-2  col-lg-offset-1" style="color:grey">
+		<div class="row">
+			<h4 style="color:green;"><img style="width: 50px;height: 50px" src="{%static 'personal/images/free.png'%}" alt=""> &nbsp;Hassle Free</h4>
+		</div>
+		<div class="row">
+			<p class="paragraphmargin"> You don't have to talk to lots of people to finalize the deal.</p>
+			<p class="paragraphmargin"> Deal will be finalize in minutes in very easy process</p>
+			
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-lg-4 col-lg-offset-5">
+		<button style="width: 200px; height: 40px; font-size: 15px;" type="button" id="Truck_Provider" class="btn btn-secondary fontsize align-centre roadbrickbutton">Join Us</button>
+	</div>
+</div>
+{% endblock %}
+
+
+

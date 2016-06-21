@@ -1,0 +1,138 @@
+{%extends "personal/header.html"%}
+{% block content %}
+<div class="row" style="margin-top: 30px;">
+	<div class="col-lg-2 col-lg-offset-2 col-md-10 col-md-offset-1" style="padding:0px;">
+		<div class="row" style="margin-left: 0px;margin-right: 0px;">
+			<h5>Date</h5>
+		</div>
+		<div class="row" style="margin-left: 0px;margin-right: 0px;">
+			<input style="height:33px;width: 175px;  padding-left:7px; border-color:#33ccff; background-color: white; border-style: solid;" type="text" placeholder="Today">
+		</div>
+	</div>
+	<div class="col-lg-2 col-md-10 col-md-offset-2" style="padding:0px; margin-left: 30px;">
+		<div class="row" style="margin-left: 0px;margin-right: 0px;">
+			<h5>From</h5>
+		</div>
+		<div class="row" style="margin-left: 0px;margin-right: 0px;">
+			<select name="" id="" style="height:33px;width: 175px;  padding:0px; border-color:#33ccff; background-color: white;border-style: solid;">
+				<option>Chennai</option>
+			</select>
+		</div>
+	</div>
+	<div class="col-lg-2 col-md-10 col-md-offset-2" style="padding:0px; margin-left: 30px;">
+		<div class="row" style="margin-left: 0px;margin-right: 0px;">
+			<h5>To</h5>
+		</div>
+		<div class="row" style="margin-left: 0px;margin-right: 0px;">
+			<select name="" id="" style="height:33px;width: 175px;  padding:0px; border-color:#33ccff; background-color: white;border-style: solid;">
+				<option>Chennai</option>
+			</select>
+		</div>
+	</div>
+	<div class="col-lg-2 col-md-10 col-md-offset-2" style="padding:0px; margin-left: 30px;">
+		<div class="row" style="margin-left: 0px;margin-right: 0px;">
+			<h5>Truck Type</h5>
+		</div>
+		<div class="row" style="margin-left: 0px;margin-right: 0px;">
+			<select name="" id="" style="height:33px;width: 175px;  padding:0px; border-color:#33ccff; background-color: white;border-style: solid;">
+				<option>All Types</option>
+			</select>
+		</div>
+	</div>
+</div>
+<div class="row" style="margin-top: 40px;">
+	<div class="col-lg-4 col-lg-offset-5">
+		<button style="font-weight: bold; width: 300px; height: 50px; font-size: 20px;" type="button" id="calculatebutton" class="btn btn-secondary fontsize align-centre roadbrickbutton">Search Deal</button>
+	</div>
+</div>
+
+
+<div class="container-fluid" style="margin-top: 30px; height: 240px;border-bottom: 1px solid #ebebe0;">
+<div class="row">
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>From</th>
+      <th>To</th>
+      <th>Material Type</th>
+      <th>Truck Type</th>
+      <th>No.of Trucks</th>
+      <th>Weight</th>
+      <th>Best Offer</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">25-05-16</td>
+      <td> Chennai</td>
+      <td>Delhi</td>
+      <td>Cement</td>
+      <td>20 Ton Container</td>
+      <td>1</td>
+      <td>20 Ton</td>
+      <td>Rs. 55000</td>
+      <td><button type="button" id="bidbutton" class="btn btn-secondary fontsize align-centre bidbutton">Bid</button></td>
+    </tr>
+    <tr>
+      <td scope="row">25-05-16</td>
+      <td> Chennai</td>
+      <td>Delhi</td>
+      <td>Cement</td>
+      <td>20 Ton Container</td>
+      <td>1</td>
+      <td>20 Ton</td>
+      <td>Rs. 55000</td>
+      <td><button type="button" id="bidbutton" class="btn btn-secondary fontsize align-centre bidbutton">Bid</button></td>
+    </tr>
+    <tr>
+      <td scope="row">25-05-16</td>
+      <td> Chennai</td>
+      <td>Delhi</td>
+      <td>Cement</td>
+      <td>20 Ton Container</td>
+      <td>1</td>
+      <td>20 Ton</td>
+      <td>Rs. 55000</td>
+      <td><button type="button" id="bidbutton" class="btn btn-secondary fontsize align-centre bidbutton">Bid</button></td>
+    </tr>
+    <tr>
+      <td scope="row">25-05-16</td>
+      <td> Chennai</td>
+      <td>Delhi</td>
+      <td>Cement</td>
+      <td>20 Ton Container</td>
+      <td>1</td>
+      <td>20 Ton</td>
+      <td>Rs. 55000</td>
+      <td><button type="button" id="bidbutton" class="btn btn-secondary fontsize align-centre bidbutton">Bid</button></td>
+    </tr>
+    <tr>
+      <td scope="row">25-05-16</td>
+      <td> Chennai</td>
+      <td>Delhi</td>
+      <td>Cement</td>
+      <td>20 Ton Container</td>
+      <td>1</td>
+      <td>20 Ton</td>
+      <td>Rs. 55000</td>
+      <td><button type="button" id="bidbutton" class="btn btn-secondary fontsize align-centre bidbutton">Bid</button></td>
+    </tr>
+    <tr>
+      <td scope="row">25-05-16</td>
+      <td> Chennai</td>
+      <td>Delhi</td>
+      <td>Cement</td>
+      <td>20 Ton Container</td>
+      <td>1</td>
+      <td>20 Ton</td>
+      <td>Rs. 55000</td>
+      <td><button type="button" id="bidbutton" class="btn btn-secondary fontsize align-centre bidbutton">Bid</button></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+{% endblock %}

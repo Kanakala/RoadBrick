@@ -1,0 +1,84 @@
+.colorgrey {
+	color: grey;
+}
+
+
+
+.align-center {
+	text-align: center;
+}
+
+.padding-top15px {
+padding-top: 15px
+}
+
+.contentstyle {
+   margin-top: 20px;
+   margin-bottom: 20px; 
+   text-decoration-style: none;
+   border-bottom: 3px solid orange; 
+   padding-bottom: 5px;
+}
+.contentstyle h1  {
+	display: inline;
+	 font-weight: bold;
+}
+
+.contentstyle h3  {
+	display: inline;
+	 font-weight: bold;
+	 color:orange;
+}
+
+.contentstyle img {width: 40px;
+	height: 40px
+}
+
+
+
+.navbarstyle h3 {
+	color:green;
+}
+
+.navbarstyle img {
+	width: 50px;
+	height: 50px
+}
+
+.join-us-buttonstyle {width: 200px; 
+      height: 40px; 
+      font-size: 15px;
+}
+
+#linebetweentwopage {
+ margin-top: 10px;
+ border-bottom: 3px solid orange
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footerstyle {padding-left: 120px;
+    padding-top: 0px;
+    align-content: center; 
+    margin-bottom :10px}
