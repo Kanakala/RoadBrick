@@ -60,10 +60,10 @@ def register_view(request):
 	}
 	return render(request, "registration/form.html", context)
 	
-# def login(request):
-    # c = {}
-    # c.update(csrf(request))
-    # return render_to_response('registration/login.html', c)
+def login(request):
+    c = {}
+    c.update(csrf(request))
+    return render_to_response('registration/login.html', c)
 
 # def auth_view(request):
    # username = request.POST.get('username', '')

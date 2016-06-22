@@ -8,7 +8,7 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     #url(r'^admin/doc/', include('django.contrib.admindocs.urls'))
     url(r'^admin/', admin.site.urls),
-    # url(r'^accounts/login/$', 'django.contrib.auth.views.login'),
+    url(r'^accounts/login/$', 'django.contrib.auth.views.login'),
     # url(r'^accounts/auth/$', 'personal.views.auth_view'),
     # #url(r'^accounts/logout/$', 'django.contrib.auth.views.logout'),
     # url(r'^accounts/loggedin/$', 'personal.views.loggedin'),
