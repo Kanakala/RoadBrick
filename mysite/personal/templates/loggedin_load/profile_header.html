@@ -46,7 +46,18 @@
 	        <a href="#livebeads" class="headerlink">Live bids</a>
 	        <li><a href="#activedeals" class="headerlink">Active deals</a></li>
 	        <li><a href="#postload" class="headerlink">Post load</a></li>
-	        <li><a href="#companydetails" class="headerlink">Roadbrick</a></li>
+	         <li class="dropdown headerlink" style="margin-top:7px;">
+					<button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">RoadBrick
+					<span class="caret"></span></button>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profile</a></li>
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Settings</a></li>
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">History</a></li>
+					   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Help</a></li>
+					  <li role="presentation" class="divider"></li>
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Logout</a></li>
+					</ul>
+			</li>
 	      </ul>
 	    </div>
 	    </div>
@@ -85,7 +96,11 @@
 
 <!--End of footer -->
 
-
+				<script>
+					$(document).ready(function(){
+						$(".dropdown-toggle").dropdown("toggle");
+					});
+				</script>
 
  </body>
  </html>
