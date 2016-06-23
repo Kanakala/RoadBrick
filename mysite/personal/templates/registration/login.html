@@ -1,4 +1,4 @@
-{%extends "base.html"%}
+{%extends "registration/header.html"%}
 {% block content %}
 {% if form.errors %}
         <p>Your username and password didn't match. Please try again.</p>
@@ -49,6 +49,7 @@
                 </div>
                 <div class="panel-footer">
                     Not Registered? <a href="/register/">Register</a></div>
+					
 </div>
 </form>
 {% endblock %}

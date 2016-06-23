@@ -66,3 +66,6 @@ def home(request):
     'home.html',
     { 'user': request.user }
     )
+
+def profile_view(request):
+	return render(request, 'loggedin_load/post_load.html')
