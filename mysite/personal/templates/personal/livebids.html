@@ -1,57 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" style="width: 100%;height: 100%;">
-<head>
-	<meta charset="utf-8"/>
-	<title>Roadbrick</title>
-	{% load staticfiles %}
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="{%static 'personal/css/bootstrap.min.css'%}">
-	<link rel="stylesheet" type="text/css" href="{%static 'personal/css/header.css'%}">
-	<link rel="stylesheet" type="text/css" href="{%static 'personal/css/livebeads.css'%}">
-	<script type="text/javascript"  src="{%static 'personal/js/roadbrick.js'%}"></script>
-</head>
-
-<!-- body Starts Hear -->
-<body class="body" data-spy="scroll" data-target=".navbar">
-	<nav class="navbar navbar-default navbar-fixed-top nomargin navbarbackground">
-	  <div class="container-fluid">
-	    <!-- Brand and toggle get grouped for better mobile display -->
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <a id="Logoimg" class="navbar-brand" href="#">
-	      	<img src="{%static 'personal/images/Logo.png'%}" class="logo-width"  alt="Smiley face">
-	      </a>
-	      <select class="navbar-language">
-			    <option>English</option>
-			    <option>Hindi</option>
-			    <option>Telgu</option>
-			    <option>Tamil</option>
-		  </select>
-	    </div>
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-right: 10px;">
-        
-	       <ul class="nav navbar-nav navbar-right" id="scrollpynavigation">
-          	 <li>
-            	<a class="navbar-brand" href="#notification" style="height:55px;">
-	      			<img src="images/notification.png" class="notificationstyle" alt="Smiley face">
-	      		</a>
-	     	 </li>
-	        <li>
-	        <a href="#livebeads" class="headerlink">Live bids</a>
-	        <li><a href="#activedeals" class="headerlink">Active deals</a></li>
-	        <li><a href="#postload" class="headerlink">Post load</a></li>
-	        <li><a href="#companydetails" class="headerlink">Roadbrick</a></li>
-	      </ul>
-	    </div>
-	    </div>
-</nav>
-
+{%extends "personal/profile_header.html"%}
+{% block content %}
 <div class="row" style="padding-top: 20px; height: 100px;">
 	<div class="col-lg-4 col-lg-offset-4">
 		<p style="display: inline; padding-right: 30px; color:orange;"> Truck Providers Type</p>
@@ -153,37 +101,4 @@
 		</table>
 </div>
 
-
-<!--Start of footer -->
-<footer class="roadbrick_footer">
-	<nav class="navbar navbar-default navbar-fixed-bottom nomargin navbarbackground" style="height: 50px;">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-4">
-					<p class="paddingtop paddingbottom">Copyright @ 2016 RoadBrick Pvt Ltd. All Right Reserved.</p>
-				</div>
-				<div class="col-lg-4 paddingtop" >
-					<ul class="footerlist">
-						<li> <a href="#roadbrickPrivacyPolicy"> Privacy Policy</a> </li>
-						<li> <a href="#roadbrickTermOfUse">Terms of Use</a> </li>
-						<li> <a href="#roadbrickWeAreHiring"> We are Hiring</a> </li>
-					</ul>
-				</div>
-				<div class="col-lg-4 footerstyle">
-					<ul class="footersocial">
-						<li><a href="#roadbrickfacebook"><img src="{%static 'personal/images/facebookicon.png'%}" alt=""></a></li>
-						<li><a href="#roadbricktwitter"><img src="{%static 'personal/images/twittericon.png'%}" alt=""></a></li>
-						<li><a href="#roadbrickgoogleplus"><img src="{%static 'personal/images/google-plus-icon.png'%}" alt=""></a></li>
-						<li><a href="#roadbrickfacebook"><img src="{%static 'personal/images/pininterest.png'%}" alt=""></a></li>
-					</ul>
-				</div>
-			</div>		
-		</div>
-</footer>
-
-<!--End of footer -->
-
-
-
- </body>
- </html>
+{% endblock %}

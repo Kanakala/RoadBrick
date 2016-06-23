@@ -1,8 +1,8 @@
-{%extends "registration/header.html"%}
+{%extends "before_login/header.html"%}
 {% load crispy_forms_tags %}
 {% block content %}
 
-<div class='col-sm-6 col-sm-offset-4'>
+<div class='col-sm-6 col-sm-offset-3'>
 <h1>{{title}}</h1>
 <hr/>
 <form method='POST' action='' enctype='multipart/form-data'>{% csrf_token%}
