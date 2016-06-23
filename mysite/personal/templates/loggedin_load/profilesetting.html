@@ -52,16 +52,24 @@
 	    </div>
 	    </nav>
 
+		<!--Profle settings page starts here-->
+		
 <div class="row">
 	<div class="col-lg-2" style="height: 300px;">
 		<ul class="nav nav-pills nav-stacked">
-  			<li role="presentation"><a href="#">Profile Settings</a></li>
-  			<li role="presentation"><a href="#">Change Password</a></li>
+  			<li role="presentation"><a href="#personal_info">Personal Info</a></li>
+			<li role="presentation"><a href="#company_info">Company Info</a></li>
+			<li role="presentation"><a href="#company_address">Company Address</a></li>
+			<li role="presentation"><a href="#pickup_drop">Add Pickup/Drop Address</a></li>
+  			<li role="presentation"><a href="#change_password">Change Password</a></li>
 		</ul>
 	</div>
+	
+	<!--personal info starts-->
+	
 	<div class="col-lg-10">
 	<form class="form-horizontal" action = "/accounts/auth/" method="post">
-		<div class="panel panel-default">
+		<div class="panel panel-default" id="personal_info">
                   <div class="panel-heading">  
 					<span class="glyphicon glyphicon-user"></span> personal Info</div>	
 				   <div class="panel-body">
@@ -131,7 +139,9 @@
 				   
 		</div>
 		
-		<div class="panel panel-default">
+		<!--company info starts-->
+		
+		<div class="panel panel-default" id="company_info">
                   <div class="panel-heading">  
 					<span class="glyphicon glyphicon-home"></span>Company Info</div>	
 				   <div class="panel-body">
@@ -201,7 +211,9 @@
 				   
 		</div>
 		
-		<div class="panel panel-default">
+		<!--company address starts-->
+		
+		<div class="panel panel-default" id="company_address">
                   <div class="panel-heading">  
 					<span class="glyphicon glyphicon-home"></span>Company Address</div>	
 				   <div class="panel-body">
@@ -289,7 +301,9 @@
 					</div>
 		</div>			
 		
-		<div class="panel panel-default">
+		<!--Add pickup/drop address page starts-->
+		
+		<div class="panel panel-default" id="pickup_drop">
                   <div class="panel-heading">  
 					<span class="glyphicon glyphicon-home"></span>Add Pickup/Drop Address</div>	
 				   <div class="panel-body">
@@ -390,7 +404,9 @@
 				
 		</div>		   
 		
-		<div class="panel panel-default">
+		<!--change password starts-->
+		
+		<div class="panel panel-default" id="change_password">
                   <div class="panel-heading">  
 					<span class="glyphicon glyphicon-home"></span>Change Password</div>	
 				   <div class="panel-body">
