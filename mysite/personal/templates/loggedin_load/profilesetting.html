@@ -59,85 +59,362 @@
   			<li role="presentation"><a href="#">Change Password</a></li>
 		</ul>
 	</div>
-
-
 	<div class="col-lg-10">
-		<div class="row">
-			<div class="col-lg-5" style="margin-top: 20px;">
-				<h4>Company Name</h4>
-			</div>
-			<div class="col-lg-5" style="margin-top: 20px;">
-  	  			<input type="text" class="form-control contact" placeholder="Roadbrick Pvt Ltd.">
-			</div>
+	<form class="form-horizontal" action = "/accounts/auth/" method="post">
+		<div class="panel panel-default">
+                  <div class="panel-heading">  
+					<span class="glyphicon glyphicon-user"></span> personal Info</div>	
+				   <div class="panel-body">
+					 <form class="form-horizontal" role="form">
+						<div class="form-group">
+                        <label for="inputfirstname" class=" col-sm-4 control-label">
+                            First Name</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputfirstname" placeholder="First Name" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputlaststname" class=" col-sm-4 control-label">
+                            Last Name</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputlaststname" placeholder="Last Name" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputrolename" class=" col-sm-4 control-label">
+                            Role In Company</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputrolename" placeholder="Role In Company" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputEmployeeid" class=" col-sm-4 control-label">
+                            Employee Id</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputEmployeeid" placeholder="Employee Id" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputcontactnumber" class=" col-sm-4 control-label">
+                            Contact Number</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="tel" class="form-control" id="inputcontactnumber" placeholder="Contact Number" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputemailid" class=" col-sm-4 control-label">
+                            Email Id</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="email" class="form-control" id="inputemailid" placeholder="Email Id" required>
+                        </div>
+						</div>
+						
+						<div class="form-group last">
+                        <div class="col-sm-offset-4 col-sm-8">
+                            <button type="submit" class="btn btn-success btn-sm">
+                               Submit</button>
+                        </div>
+						</div>
+					 </form>	
+				   </div>
+				   
 		</div>
-		<div class="row">
-			<div class="col-lg-5" style="margin-top: 20px;">
-				<h4>Company's Regestration Number</h4>
-			</div>
-			<div class="col-lg-5" style="margin-top: 20px;">
-  	  			<input type="text" class="form-control contact" placeholder="Rg5758394877">
-			</div>
+		
+		<div class="panel panel-default">
+                  <div class="panel-heading">  
+					<span class="glyphicon glyphicon-home"></span>Company Info</div>	
+				   <div class="panel-body">
+					 <form class="form-horizontal" role="form">
+						<div class="form-group">
+                        <label for="inputcompanyname" class=" col-sm-4 control-label">
+                            Company Name</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputcompanyname" placeholder="Company Name" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputcompanytype" class=" col-sm-4 control-label">
+                            Company Type</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputcompanytype" placeholder="Company Type" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputstnumber" class=" col-sm-4 control-label">
+                            Service Tax Number</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputstnumber" placeholder="Service Tax Number" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputpan" class=" col-sm-4 control-label">
+                            PAN</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputpan" placeholder="PAN" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputtin" class=" col-sm-4 control-label">
+                            TIN/CIN</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputtin" placeholder="TIN/CIN" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputurl" class=" col-sm-4 control-label">
+                            Website</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="url" class="form-control" id="inputurl" placeholder="Website URL" required>
+                        </div>
+						</div>
+						
+						<div class="form-group last">
+                        <div class="col-sm-offset-4 col-sm-8">
+                            <button type="submit" class="btn btn-success btn-sm">
+                                Submit</button>
+                        </div>
+						</div>
+					 </form>	
+				   </div>
+				   
 		</div>
-		<div class="row">
-			<div class="col-lg-5" style="margin-top: 20px;">
-				<h4>Employee Id</h4>
-			</div>
-			<div class="col-lg-5" style="margin-top: 20px;">
-  	  			<input type="text" class="form-control contact" placeholder="Emp203898">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-5" style="margin-top: 20px;">
-				<h4>Contact Number</h4>
-			</div>
-			<div class="col-lg-5" style="margin-top: 20px;">
-  	  			<input type="text" class="form-control contact" placeholder="9087864155">
-			</div>
-		</div><div class="row">
-			<div class="col-lg-5" style="margin-top: 20px;">
-				<h4>Email Id</h4>
-			</div>
-			<div class="col-lg-5" style="margin-top: 20px;">
-  	  			<input type="text" class="form-control contact" placeholder="madhavvart@roadbrick.com">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-5" style="margin-top: 20px;">
-				<h4>Office Address</h4>
-			</div>
-			<div class="col-lg-5" style="margin-left: 15px;">
-				<div class="row"  style="margin-top: 20px; width: 408px; border:1px solid orange; ">
-					<input style="margin:3px;" type="text" class="form-control contact" placeholder="Address1">
-					<input style="margin:3px;" type="text" class="form-control contact" placeholder="Address2">
-					<input style="margin:3px;" type="text" class="form-control contact" placeholder="Address3">
-					<input style="margin:3px;" type="text" class="form-control contact" placeholder="City-Pincode">
-					<input style="margin:3px;" type="text" class="form-control contact" placeholder="State">
-					<input style="margin:3px;" type="text" class="form-control contact" placeholder="Email Id">
-					<input style="margin:3px;" type="text" class="form-control contact" placeholder="Phone Number">
+		
+		<div class="panel panel-default">
+                  <div class="panel-heading">  
+					<span class="glyphicon glyphicon-home"></span>Company Address</div>	
+				   <div class="panel-body">
+				<form class="form-horizontal" role="form">
+						<div class="form-group">
+                        <label for="inputline1" class=" col-sm-4 control-label">
+                            Line 1</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputline1" placeholder="House/street/Road" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputline2" class=" col-sm-4 control-label">
+                            Line 2</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputline2" placeholder="Area/Locality" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputcity" class=" col-sm-4 control-label">
+                            City</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputcity" placeholder="City" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputdistrict" class=" col-sm-4 control-label">
+                            District</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputline1" placeholder="District" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputstate" class=" col-sm-4 control-label">
+                            State</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputstate" placeholder="State" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputpin" class=" col-sm-4 control-label">
+                            Pin Code</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputpin" placeholder="Pin code" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputcontact1" class=" col-sm-4 control-label">
+                            Contact Number</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="tel" class="form-control" id="inputcontact1" placeholder="Contact Number" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputfax" class=" col-sm-4 control-label">
+                            Fax</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputfax" placeholder="Fax" required>
+                        </div>
+						</div>
+						
+						<div class="form-group last">
+                        <div class="col-sm-offset-4 col-sm-8">
+                            <button type="submit" class="btn btn-success btn-sm">
+                                Submit</button>
+                        </div>
+						</div>
+						
+				</form>		
+					</div>
+		</div>			
+		
+		<div class="panel panel-default">
+                  <div class="panel-heading">  
+					<span class="glyphicon glyphicon-home"></span>Add Pickup/Drop Address</div>	
+				   <div class="panel-body">
+				   <form class="form-horizontal" role="form">
+							<div class="form-group">
+                        <label for="inputline1" class=" col-sm-4 control-label">
+                            Line 1</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputline1" placeholder="House/street/Road" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputline2" class=" col-sm-4 control-label">
+                            Line 2</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputline2" placeholder="Area/Locality" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputcity" class=" col-sm-4 control-label">
+                            City</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputcity" placeholder="City" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputdistrict" class=" col-sm-4 control-label">
+                            District</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputline1" placeholder="District" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputstate" class=" col-sm-4 control-label">
+                            State</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputstate" placeholder="State" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputpin" class=" col-sm-4 control-label">
+                            Pin Code</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="text" class="form-control" id="inputpin" placeholder="Pin code" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputcontact1" class=" col-sm-4 control-label">
+                            Contact Number</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="tel" class="form-control" id="inputcontact1" placeholder="Contact Number" required>
+                        </div>
+						</div>
+						
+						<div class="form-group">
+                        <label for="inputperson" class=" col-sm-4 control-label">
+                            Contact Person</label>
+                       
+                        <div class="col-lg-5" >
+                            <input type="tel" class="form-control" id="inputperson" placeholder="Contact Person Name" required>
+                        </div>
+						</div>
+						
+						<div class=" col-sm-offset-6 checkbox">
+							<label class="checkbox-inline">
+								<input type="checkbox" value="pickup">
+								Pick-Up Address
+							</label>
+							
+							<label class="checkbox-inline">
+								<input type="checkbox" value="drop">
+								Drop Address
+							</label>
+						</div>
+						
+						<div class="form-group last">
+                        <div class="col-sm-offset-4 col-sm-8">
+                            <button type="submit" class="btn btn-success btn-sm">
+                                Submit</button>
+                        </div>
+						</div>
+						
+				   </form>
 				</div>
-			</div>
-		</div>
-		<div style="margin-top: 30px;" class="borderbetweentwodiv"></div>
-		<div class="row">
-				<div class="col-lg-8 col-lg-offset-2" style="padding-left: 130px;">
-					<h4 style="color:orange; margin-left: 100px;">Change Password</h4>
-					<div style="margin-left: 50px; width: 250px;" class="borderbetweentwodiv"></div>
-				</div>
-`		</div>
-		<div class="row" style="margin-top: 30px; margin-left: 40px;">
-			<div class="col-lg-4 col-lg-offset-2">
-				<input style="margin:3px; height: 35px; width: 450px;" type="text" class="form-control" placeholder="Enter Current Password">
-				<input style="margin:3px; height: 35px; width: 450px;" type="text" class="form-control" placeholder="Enter New Password">
-				<input style="margin:3px; height: 35px; width: 450px;" type="text" class="form-control" placeholder="Confirm New Password">
-			</div>
-		</div>
-		<div class="row" style="margin-top: 30px; margin-left: 40px;">
-			<div class="col-lg-4 col-lg-offset-2">
-				<button style="color:white; margin-left: 175px; width: 100px; background-color: orange;" type="button" id="profilebutton" class="btn btn-secondary">Save</button>
-			</div>
-		</div>
+				
+		</div>		   
+		
+		<div class="panel panel-default">
+                  <div class="panel-heading">  
+					<span class="glyphicon glyphicon-home"></span>Change Password</div>	
+				   <div class="panel-body">
+		
+						<div class="row" style="margin-top: 30px; margin-left: 40px;">
+							<div class="col-lg-4 col-lg-offset-2">
+								<input style="margin:3px; height: 35px; width: 450px;" type="text" class="form-control" placeholder="Enter Current Password">
+								<input style="margin:3px; height: 35px; width: 450px;" type="text" class="form-control" placeholder="Enter New Password">
+								<input style="margin:3px; height: 35px; width: 450px;" type="text" class="form-control" placeholder="Confirm New Password">
+							</div>
+						</div>
+						<div class="row" style="margin-top: 30px; margin-left: 40px;">
+							<div class="col-lg-4 col-lg-offset-2">
+								<button style="color:white; margin-left: 175px; width: 100px; background-color: orange;" type="button" id="profilebutton" class="btn btn-secondary">Submit</button>
+							</div>
+						</div>
+					</div>
+		</div>			
+	</form>
 	</div>
 </div>
+
+
+	
 
 <!--Start of footer -->
 <footer class="roadbrick_footer">
