@@ -14,7 +14,10 @@ urlpatterns = [
     url(r'^register/$', views.register_view, name='register'),
     url(r'^register/success/$', views.register_success, name='register_success'),
     url(r'^home/$', views.home, name='home'),
-	url(r'^accounts/profile/$', views.profile_view, name='profile_view'),
+	url(r'^post_load/$', views.post_load, name='post_load'),
+	url(r'^profile/$', views.profile_view, name='profile_view'),
+	url(r'^profile_settings/$', views.profile_settings, name='profile_settings'),
+	url(r'^live_bids/$', views.live_bids, name='live_bids'),
 
     url(r'^deal/$', views.deal, name='deal'),
     url(r'^registration/$', views.registration, name='registration'),

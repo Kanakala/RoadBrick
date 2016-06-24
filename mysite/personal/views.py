@@ -67,5 +67,14 @@ def home(request):
     { 'user': request.user }
     )
 
-def profile_view(request):
+def post_load(request):
 	return render(request, 'loggedin_load/post_load.html')
+	
+def profile_view(request):
+	return render(request, 'loggedin_load/profile.html')
+	
+def profile_settings(request):
+	return render(request, 'loggedin_load/profile_settings.html')
+	
+def live_bids(request):
+	return render(request, 'loggedin_load/live_bids.html')
