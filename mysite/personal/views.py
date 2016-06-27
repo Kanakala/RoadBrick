@@ -86,8 +86,13 @@ def home(request):
     { 'user': request.user }
     )
 
+
 # def post_load(request):
 	# return render(request, 'loggedin_load/post_load.html')
+
+def post_load(request):
+	return render(request, 'loggedin_load/post_load.html')
+
 	
 def profile_view(request):
 	return render(request, 'loggedin_load/profile.html')
@@ -116,3 +121,6 @@ def post_create(request):
 		"form": form,
 	}
 	return render(request, "loggedin_load/post_load.html", context)
+
+	return render(request, 'loggedin_load/live_bids.html')
+

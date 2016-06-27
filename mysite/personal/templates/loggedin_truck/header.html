@@ -37,42 +37,27 @@
 	   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-right: 10px;">
         
 	       <ul class="nav navbar-nav navbar-right" id="scrollpynavigation">
-<<<<<<< HEAD
-          	 <li>
-            	<!--<a class="navbar-brand" href="#notification" style="height:55px;">
-	      			<img src="{%static 'personal/images/notification.png'%}" class="notificationstyle" alt="Smiley face">
-	      		</a>-->
-	     	 </li>
 	        <li>
-	        <a href="/live_bids/" class="headerlink">Live bids</a>
-<<<<<<< HEAD
-	        <li><a href="/active_deals/" class="headerlink">Active deals</a></li>
-	        <li><a href="/post_load/" class="headerlink">Post load</a></li>
-=======
+	        <a href="#livebeads" class="headerlink">Live bids</a>
 	        <li><a href="#activedeals" class="headerlink">Active deals</a></li>
-	        <li><a href="/post_load/" class="headerlink">Post load</a></li>
-=======
-	        <li>
-	        <a href="#livebeads" class="headerlink">Live bids</a></li>
-	        <li><a href="#activedeals" class="headerlink">Active deals</a></li>
-	        <li><a href="#postload" class="headerlink">Post load</a></li>
+	        <li><a href="#postload" class="headerlink">Payment</a></li>
 			<li style="margin-top:7px; margin-right:2px;">
-				<button class="btn btn-primary" type="button" data-target="#">
+			
+            	<button class="btn btn-primary" type="button" data-target="#collapseExample">
 				  Inbox <span class="badge">4</span>
-				</button>			
+				</button>
+			
 	     	 </li>
->>>>>>> ecaf5ede1b44e8f7caf9b869a5a60150d1c65228
->>>>>>> c20efb223acc57ce74f6c566207b9139e0b10cd7
 	         <li class="dropdown headerlink" style="margin-top:7px;">
-					<button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">RoadBrick
+					<button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Sivay Transport
 					<span class="caret"></span></button>
 					<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-					  <li role="presentation"><a role="menuitem" tabindex="-1" href="/profile/">Profile</a></li>
-					  <li role="presentation"><a role="menuitem" tabindex="-1" href="/profile_settings/">Settings</a></li>
-					  <li role="presentation"><a role="menuitem" tabindex="-1" href="/history/">History</a></li>
-					   <li role="presentation"><a role="menuitem" tabindex="-1" href="/help/">Help</a></li>
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profile</a></li>
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Settings</a></li>
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">History</a></li>
+					   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Help</a></li>
 					  <li role="presentation" class="divider"></li>
-					  <li role="presentation"><a role="menuitem" tabindex="-1" href="/logout/">Logout</a></li>
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Logout</a></li>
 					</ul>
 			</li>
 	      </ul>
@@ -118,14 +103,10 @@
 						$(".dropdown-toggle").dropdown("toggle");
 					});
 				</script>
-
-			
-
 				
-				<script type="text/javascript" src="{% static 'personal/js/jquery.min.js'%}"></script>
-				<script type="text/javascript" src="{%static 'personal/js/bootstrap.min.js'%}"></script>
+				<script type="text/javascript" src="personal/js/jquery.min.js"></script>
+				<script type="text/javascript" src="personal/js/bootstrap.min.js"></script>
 				<script type="text/javascript">$(document).ready(function() { $('body').scrollspy({ target: '#scrollpynavigation'});});</script>
-
 
  </body>
  </html>
