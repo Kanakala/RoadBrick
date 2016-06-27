@@ -24,4 +24,6 @@ urlpatterns = [
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls'))
     # url(r'^accounts/', include('accounts.urls')),
     url(r'^', include('personal.urls')),
+	url(r'^', include('personal.urls', namespace='deal')),
+	url(r'^', include('personal.urls', namespace='posts')),
 ]

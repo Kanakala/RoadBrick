@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="{%static 'personal/css/bootstrap.min.css'%}">
 	<link rel="stylesheet" type="text/css" href="{%static 'personal/css/header.css'%}">
 	<link rel="stylesheet" type="text/css" href="{%static 'personal/css/livebeads.css'%}">
-	<!--<script type="text/javascript"  src="{%static 'personal/js/roadbrick.js'%}"></script>-->jquery.min
+	<script type="text/javascript"  src="{%static 'personal/js/roadbrick.js'%}"></script>
 </head>
 
 <!-- body Starts Hear -->
@@ -43,19 +43,19 @@
 	      		</a>-->
 	     	 </li>
 	        <li>
-	        <a href="#livebeads" class="headerlink">Live bids</a>
-	        <li><a href="#activedeals" class="headerlink">Active deals</a></li>
-	        <li><a href="#postload" class="headerlink">Post load</a></li>
+	        <a href="/live_bids/" class="headerlink">Live bids</a>
+	        <li><a href="/active_deals/" class="headerlink">Active deals</a></li>
+	        <li><a href="/post_load/" class="headerlink">Post load</a></li>
 	         <li class="dropdown headerlink" style="margin-top:7px;">
 					<button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">RoadBrick
 					<span class="caret"></span></button>
 					<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profile</a></li>
-					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Settings</a></li>
-					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">History</a></li>
-					   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Help</a></li>
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="/profile/">Profile</a></li>
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="/profile_settings/">Settings</a></li>
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="/history/">History</a></li>
+					   <li role="presentation"><a role="menuitem" tabindex="-1" href="/help/">Help</a></li>
 					  <li role="presentation" class="divider"></li>
-					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Logout</a></li>
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="/logout/">Logout</a></li>
 					</ul>
 			</li>
 	      </ul>
@@ -101,7 +101,14 @@
 						$(".dropdown-toggle").dropdown("toggle");
 					});
 				</script>
-			<script type="text/javascript"  src="{%static 'personal/js/bootstrap.min.js'%}"></script>
-			<script type="text/javascript"  src="{%static 'personal/js/jquery.min.js'%}"></script>	
+
+			
+
+				
+				<script type="text/javascript" src="{% static 'personal/js/jquery.min.js'%}"></script>
+				<script type="text/javascript" src="{%static 'personal/js/bootstrap.min.js'%}"></script>
+				<script type="text/javascript">$(document).ready(function() { $('body').scrollspy({ target: '#scrollpynavigation'});});</script>
+
+
  </body>
  </html>

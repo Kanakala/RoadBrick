@@ -1,5 +1,14 @@
-{%extends "before_login/header.html"%}
+{%extends "before_login/header.html"%} 
 {% block content %}
+
+{% csrf_token %}
+
+
+
+
+
+{% load staticfiles %}
+<script src="{%static 'personal/js/sorttable.js'%}"></script>
 <div class="row" style="margin-top: 30px;">
 	<div class="col-lg-2 col-lg-offset-2 col-md-10 col-md-offset-1" style="padding:0px;">
 		<div class="row" style="margin-left: 0px;margin-right: 0px;">
@@ -49,7 +58,9 @@
 
 <div class="container-fluid" style="margin-top: 30px; height: 240px;border-bottom: 1px solid #ebebe0;">
 <div class="row">
-<table class="table table-striped">
+
+<table class="table table-striped, sortable" >
+
   <thead>
     <tr>
       <th>Date</th>
@@ -64,7 +75,22 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
+	<tr>
+	{% for obj in object_list %}
+	
+	
+      <td scope="row">{{obj.date}}</td>
+      <td> <a href='{{ obj.get_absolute_url }}'>{{ obj.from1 }}</a><br/></td>
+      <td>{{obj.To}}</td>
+      <td>{{obj.Material_Type}}</td>
+      <td>{{obj.type_of_truck}}</td>
+      <td>{{obj.Number_Of_Truck}}</td>
+      <td>{{obj.weight}}</td>
+      <td>Rs. 55000</td>
+      <td><button type="button" id="bidbutton" class="btn btn-secondary fontsize align-centre bidbutton">Bid</button></td>
+    </tr>
+	{% endfor %}
+    <!--<tr>
       <td scope="row">25-05-16</td>
       <td> Chennai</td>
       <td>Delhi</td>
@@ -118,19 +144,9 @@
       <td>20 Ton</td>
       <td>Rs. 55000</td>
       <td><button type="button" id="bidbutton" class="btn btn-secondary fontsize align-centre bidbutton">Bid</button></td>
-    </tr>
-    <tr>
-      <td scope="row">25-05-16</td>
-      <td> Chennai</td>
-      <td>Delhi</td>
-      <td>Cement</td>
-      <td>20 Ton Container</td>
-      <td>1</td>
-      <td>20 Ton</td>
-      <td>Rs. 55000</td>
-      <td><button type="button" id="bidbutton" class="btn btn-secondary fontsize align-centre bidbutton">Bid</button></td>
-    </tr>
+    </tr>-->
   </tbody>
+  
 </table>
 </div>
 </div>

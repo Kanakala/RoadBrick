@@ -2,6 +2,7 @@ import re
 from django import forms
 from django.contrib.auth.models import User
 from django.utils.translation import ugettext_lazy as _
+from .models import Post
  
 class RegistrationForm(forms.Form):
  
@@ -22,3 +23,21 @@ class RegistrationForm(forms.Form):
             if self.cleaned_data['password1'] != self.cleaned_data['password2']:
                 raise forms.ValidationError(_("The two password fields did not match."))
         return self.cleaned_data
+		
+
+class PostForm(forms.ModelForm):
+    class Meta:
+        model = Post
+        fields = [
+			
+            "from1",
+            "type_of_truck",
+            "date",
+            "weight",
+            "Material_Name",
+			"To",
+			"Number_Of_Truck",
+			"Time",
+			"Volume",
+			"Material_Type"
+        ]
