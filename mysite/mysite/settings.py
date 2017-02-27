@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'personal',
+	'custom_user',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,6 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 	'crispy_forms',
+	'widget_tweaks',
+	'haystack',
+	'whoosh',
+	'truck',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
@@ -78,17 +83,34 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
+AUTH_USER_MODEL ='custom_user.EmailUser'
+
+Truck_group = 'Truck'
+Company_group = 'Company'
+
+# WHOOSH_STORAGE_DIR = '/data/whoosh'
+
+HAYSTACK_CONNECTIONS = {
+     'default': {
+        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+        'PATH': 'C:\\Users\\Sumanth\\Desktop\\New Folder\\working search\\Project (2)\\Project\\mysite\\personal\\templates\\search\\indexes',
+        'STORAGE': 'file',
+        'POST_LIMIT': 128 * 1024 * 1024,
+        'INCLUDE_SPELLING': True,
+        'BATCH_SIZE': 100,
+        'EXCLUDED_INDEXES': ['thirdpartyapp.search_indexes.BarIndex'],
+    },
+}
+
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'python',
-        'USER': 'root',
-        'PASSWORD': 'sumanth',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME':  os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
 
 
 # Password validation

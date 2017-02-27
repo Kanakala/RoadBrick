@@ -1,7 +1,7 @@
 {%extends "registration/header.html"%}
 {% block content %}
 {% if form.errors %}
-        <p>Your username and password didn't match. Please try again.</p>
+        <p>Your email and password didn't match. Please try again.</p>
 {% endif %}
 
   <form class="form-horizontal" method="post" action = "." >{%csrf_token%}
@@ -15,7 +15,7 @@
 						<table border="0">
 						<div class="col-sm-4"> 
 						
-            <tr><th><label for="id_user" class="col-sm-4 control-label">Username:</label></th><td>{{ form.username }}</td></tr> </div>
+            <tr><th><label for="id_user" class="col-sm-4 control-label">Email:</label></th><td>{{ form.username }}</td></tr> </div>
             <div class="col-sm-4"> 
 
 
@@ -39,7 +39,7 @@
                         <div class="col-sm-offset-4 col-sm-8">
                             <button type="submit" class="btn btn-success btn-sm">
                                 Sign in</button>
-							<input type="hidden" name="next" value="/post_load" /> 
+							<input type="hidden" name="next" value="." /> 
                                 <label class="col-sm-offset-3">
                          <a href="#">Forget Password? </a>
 					</label> 

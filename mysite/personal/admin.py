@@ -1,8 +1,10 @@
 from django.contrib import admin
-
-#from personal.models import UserProfile
-#from personal.models import UserProfile
+from django.db import models
 from .models import Post
+
+from django.utils.translation import ugettext_lazy as _
+from django.contrib.auth.models import User
+
 
 class PostModelAdmin(admin.ModelAdmin):
 	list_display = [ "type_of_truck", "date", "weight", "Material_Name", "To", "Number_Of_Truck", "Time", "Volume", "Material_Type", "timestamp"]
@@ -15,4 +17,3 @@ class PostModelAdmin(admin.ModelAdmin):
 		model = Post
 
 admin.site.register( Post, PostModelAdmin)
-#admin.site.register(UserProfile)

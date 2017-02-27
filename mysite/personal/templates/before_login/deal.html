@@ -2,11 +2,6 @@
 {% block content %}
 
 {% csrf_token %}
-
-
-
-
-
 {% load staticfiles %}
 <script src="{%static 'personal/js/sorttable.js'%}"></script>
 <div class="row" style="margin-top: 30px;">
@@ -50,7 +45,7 @@
 	</div>
 </div>
 <div class="row" style="margin-top: 40px;">
-	<div class="col-lg-4 col-lg-offset-5">
+	<div class="col-lg-4 col-lg-offset-4">
 		<button style="font-weight: bold; width: 300px; height: 50px; font-size: 20px;" type="button" id="calculatebutton" class="btn btn-secondary fontsize align-centre roadbrickbutton">Search Deal</button>
 	</div>
 </div>
@@ -58,7 +53,10 @@
 
 <div class="container-fluid" style="margin-top: 30px; height: 240px;border-bottom: 1px solid #ebebe0;">
 <div class="row">
-
+<form method='GET' action=''>
+<input type='text' name='q' placeholder='Search posts' value='{{ request.GET.q }}'/>
+<input type='submit' value='Search' />
+</form>
 <table class="table table-striped, sortable" >
 
   <thead>
@@ -76,6 +74,7 @@
   </thead>
   <tbody>
 	<tr>
+	
 	{% for obj in object_list %}
 	
 	

@@ -1,14 +1,23 @@
 {%extends "before_login/header.html"%} 
+
+
+{% load urlify %}
+
+{% block head_title %}
+{{ instance.from1 }} | {{ block.super }}
+{% endblock head_title %}
+
+
+
 {% block content %}
+<div class='col-sm-6 col-sm-offset-3'>
+    
+ <!-- <h1>{{ title }} <small>{% if instance.draft %}<span style='color:red;'>Draft</span>{% endif %} -->{{ instance.from1 }}</small></h1>
+{% if instance.from1 %}
+<p>{{ instance.Material_Type }}</p>
+{% endif %}
 
-<h1>{{ title }}</h1>
 
-
-{{ instance.date }}<br/>
-{{ instance.content }}<br/>
-{{ instance.timestamp }}<br/>
-{{ instance.updated }}<br/>
-{{ instance.id }}<br/>
 
 
 {% endblock %}

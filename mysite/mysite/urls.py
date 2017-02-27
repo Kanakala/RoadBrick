@@ -26,4 +26,5 @@ urlpatterns = [
     url(r'^', include('personal.urls')),
 	url(r'^', include('personal.urls', namespace='deal')),
 	url(r'^', include('personal.urls', namespace='posts')),
+	url(r'^', include('truck.urls')),
 ]

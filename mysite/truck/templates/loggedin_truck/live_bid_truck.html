@@ -1,0 +1,147 @@
+{%extends "loggedin_truck/profile_header.html"%}
+{% block content %}
+
+{% load staticfiles %}
+{% load widget_tweaks %}
+<script language="javascript" type="text/javascript">
+function multiply(){
+a=Number(document.my_cal.first.value);
+b=Number(document.my_cal.second.value);
+c=a*b;
+document.my_cal.total.value=c;
+}
+</script>
+
+<script src="{%static 'personal/js/sorttable.js'%}"></script>
+<div class="row" style="margin-top: 30px;">
+	<div class="col-lg-2 col-lg-offset-2 col-md-10 col-md-offset-1" style="padding:0px;">
+		<div class="row" style="margin-left: 0px;margin-right: 0px;">
+			<h5>Date</h5>
+		</div>
+		<div class="row" style="margin-left: 0px;margin-right: 0px;">
+			<input style="height:33px;width: 175px;  padding-left:7px; border-color:#33ccff; background-color: white; border-style: solid;" type="text" placeholder="Today">
+		</div>
+	</div>
+	<div class="col-lg-2 col-md-10 col-md-offset-2" style="padding:0px; margin-left: 30px;">
+		<div class="row" style="margin-left: 0px;margin-right: 0px;">
+			<h5>From</h5>
+		</div>
+		<div class="row" style="margin-left: 0px;margin-right: 0px;">
+			<select name="" id="" style="height:33px;width: 175px;  padding:0px; border-color:#33ccff; background-color: white;border-style: solid;">
+				<option>Chennai</option>
+			</select>
+		</div>
+	</div>
+	<div class="col-lg-2 col-md-10 col-md-offset-2" style="padding:0px; margin-left: 30px;">
+		<div class="row" style="margin-left: 0px;margin-right: 0px;">
+			<h5>To</h5>
+		</div>
+		<div class="row" style="margin-left: 0px;margin-right: 0px;">
+			<select name="" id="" style="height:33px;width: 175px;  padding:0px; border-color:#33ccff; background-color: white;border-style: solid;">
+				<option>Chennai</option>
+			</select>
+		</div>
+	</div>
+	<div class="col-lg-2 col-md-10 col-md-offset-2" style="padding:0px; margin-left: 30px;">
+		<div class="row" style="margin-left: 0px;margin-right: 0px;">
+			<h5>Truck Type</h5>
+		</div>
+		<div class="row" style="margin-left: 0px;margin-right: 0px;">
+			<select name="" id="" style="height:33px;width: 175px;  padding:0px; border-color:#33ccff; background-color: white;border-style: solid;">
+				<option>All Types</option>
+			</select>
+		</div>
+	</div>
+</div>
+<div class="row" style="margin-top: 40px;">
+	<div class="col-lg-4 col-lg-offset-4">
+		<button style="font-weight: bold; width: 300px; height: 50px; font-size: 20px;" type="button" id="calculatebutton" class="btn btn-secondary fontsize align-centre roadbrickbutton">Search Deal</button>
+	</div>
+</div>
+
+
+<!-- table start from here -->
+
+<div class="row margin-top30px" style = "margin-left: 2px;margin-right: 0px;">
+<table class="table table-striped, sortable">
+  <thead>
+    <tr>
+      <th>Load No.</th>
+      <th>Date</th>
+      <th>From</th>
+      <th>To</th>
+      <th>Material Type</th>
+      <th>Weight (In Ton)</th>
+      <th>Distance (IN KM)</th>
+      <th>Truck Type</th>
+      <th>No.of Trucks</th>
+      <th>Rating</th>
+      <th></th>
+    </tr>
+ </thead>
+  <tbody>
+    <tr>
+	{% for obj in object_list %}
+      <td >{{obj.id}}</td>
+      <td> {{obj.date}}</td>
+      <td><a href='{{ obj.get_absolute_url }}'>{{ obj.from1 }}</a><br/></td>
+      <td>{{obj.To}}</td>
+      <td>{{obj.Material_Type}}</td>
+      <td>{{obj.weight}}</td>
+      <td>2200</td>
+      <td>{{obj.type_of_truck}}</td>
+      <td>{{obj.Number_Of_Truck}}</td>
+      <td>85%</td>
+    </tr> {% endfor %}
+ </tbody>
+</table>
+<table class="table table-striped, sortable "  style="margin-top: 10px">
+  <thead>
+   <tr>
+      <th>Present Top Bid (Per Truck) </th>
+      <th>Your Bid (Per Truck) </th>
+      <th>No of Truck You Provide  </th>
+      <th>Total Amount</th>
+      <th>Your Bid Position </th>
+      <th>Bidding End In</th>
+     </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rs.45000</td>
+      
+	  <td> 
+            <div class="row marginleftright-0px ">
+			<input type="text" name="second" placeholder="Amount"> 
+			
+			
+		</div></td>
+      <td> <div class="row marginleftright-0px" >
+			<select name="first" id="" class="navstyle">
+			    <option>1</option>
+			    <option>2</option>
+			    <option>3</option>
+			    <option>4</option>
+			    <option>5</option>
+		  </select>   </div>   </td><form class="nomargin" method='POST' action='' enctype='multipart/form-data'>{% csrf_token %}
+      <td>{% render_field  form.amount  class="stylefordate"     %}
+
+
+<input type="button" value="GET" onclick="javascript:multiply();"></td> 
+{% csrf_token %}   
+   {% for bid in bid_queryset %} 
+	 <td>{{bid.rank}} {% endfor %}</td> 
+      <td>6 hrs 30 min</td>
+    </tr>
+ </tbody>
+</table>
+</div>
+<!--table end -->
+
+<div class="row">
+	<div class="col-lg-1 col-lg-offset-10">
+		<button type='button' id="postbidbutton" class=" btn btn-secondary fontsize align-centre"><input type='submit' value='Post Bid'/></button> </form>
+	</div>
+</div>
+
+{% endblock %}
